@@ -503,8 +503,9 @@
             <span class="agenda-section-time">30m</span>
           </div>
           <a class="agenda-item" href="#11"><span class="agenda-item-label">Build a Small Multi-File Web App</span></a>
-          <a class="agenda-item" href="#12"><span class="agenda-item-label">GitHub + GitHub Pages</span></a>
-          <a class="agenda-item" href="#13"><span class="agenda-item-label">Links &amp; References</span></a>
+          <a class="agenda-item" href="#12"><span class="agenda-item-label">Push to GitHub</span></a>
+          <a class="agenda-item" href="#13"><span class="agenda-item-label">Enable GitHub Pages</span></a>
+          <a class="agenda-item" href="#14"><span class="agenda-item-label">Links &amp; References</span></a>
         </div>
 
       </div>
@@ -644,25 +645,40 @@ assets/
     </div>
   </section>
 
-  <!-- 12 · PUSH AND DEPLOY -->
-  <section class="slide" data-slide="deploy" aria-label="GitHub + GitHub Pages">
+  <!-- 12 · PUSH TO GITHUB -->
+  <section class="slide" data-slide="push" aria-label="Push to GitHub">
     <div class="content">
       <div class="label">Publish</div>
-      <h1>GitHub + GitHub Pages</h1>
+      <h1>Push to GitHub</h1>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="step-grid">
         <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Stage your files:<span class="code-block">git add .</span></div></div>
         <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Commit your changes:<span class="code-block">git commit -m "first prototype"</span></div></div>
         <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Push to GitHub:<span class="code-block">git push</span></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Open repository <strong>Settings</strong></div></div>
-        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Enable <strong>GitHub Pages</strong></div></div>
-        <div class="step-row frag"><div class="step-num">6</div><div class="step-text">Publish from the <strong>main</strong> branch</div></div>
       </div>
     </div>
   </section>
 
-  <!-- 13 · RESOURCES -->
+  <!-- 13 · ENABLE GITHUB PAGES -->
+  <section class="slide" data-slide="pages" aria-label="Enable GitHub Pages">
+    <div class="content">
+      <div class="label">Publish</div>
+      <h1>Enable GitHub Pages</h1>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="step-grid">
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Go to <code>github.com/USERNAME/REPO</code></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Click the <strong>Settings</strong> tab</div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Click <strong>Pages</strong> in the left sidebar</div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Under <strong>Source</strong>, select <strong>Deploy from a branch</strong></div></div>
+        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Choose <strong>main</strong> &rarr; <strong>/ (root)</strong> and click <strong>Save</strong></div></div>
+        <div class="step-row frag"><div class="step-num">6</div><div class="step-text">Visit <code>USERNAME.github.io/REPO</code></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · RESOURCES -->
   <section class="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>
@@ -750,13 +766,13 @@ assets/
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="13" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="14" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 13</span>
+      <span id="slider-counter">1 / 14</span>
       <span class="kbd">Space</span>
     </div>
   </div>

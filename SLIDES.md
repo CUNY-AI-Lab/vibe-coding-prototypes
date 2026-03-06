@@ -144,22 +144,34 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 12 — Push and Deploy
+## Slide 12 — Push to GitHub
 
 **Label:** Publish
-**Title:** GitHub + GitHub Pages
+**Title:** Push to GitHub
 
 **Stage (step-grid, fragments):**
 1. `git add .`
 2. `git commit -m "first prototype"`
 3. `git push`
-4. Open repository settings
-5. Enable GitHub Pages
-6. Publish from the main branch
 
 * * *
 
-## Slide 13 — Resources
+## Slide 13 — Enable GitHub Pages
+
+**Label:** Publish
+**Title:** Enable GitHub Pages
+
+**Stage (step-grid, fragments):**
+1. Go to `github.com/USERNAME/REPO`
+2. Click the **Settings** tab
+3. Click **Pages** in the left sidebar
+4. Under **Source**, select **Deploy from a branch**
+5. Choose **main** → **/ (root)** and click **Save**
+6. Visit `USERNAME.github.io/REPO`
+
+* * *
+
+## Slide 14 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -179,4 +191,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-06. Deck has 13 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-06. Deck has 14 slides. Update both this file and `index.html` together._
