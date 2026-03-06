@@ -24,6 +24,7 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 Part 1 — Authentication + Setup:
 - Authenticate with GitHub CLI
+- Install Homebrew / Node.js
 - Install and launch Gemini CLI
 - Establish an agent workflow in the terminal
 
@@ -62,7 +63,26 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 5 — Gemini CLI Setup
+## Slide 5 — Install Homebrew / Node.js
+
+**Label:** Setup
+**Title:** Install Homebrew / Node.js
+
+**Stage (stageCompare):**
+
+- **macOS — Terminal:**
+  1. Install Homebrew from brew.sh
+  2. Add Homebrew to PATH
+  3. Confirm with `brew --version`
+
+- **Windows — PowerShell:**
+  1. Install Node.js LTS from nodejs.org
+  2. Reopen PowerShell
+  3. Confirm with `node --version`
+
+* * *
+
+## Slide 6 — Gemini CLI Setup
 
 **Label:** Setup
 **Title:** Install and Launch Gemini CLI
@@ -76,7 +96,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 6 — First Rule: Plan Before Action
+## Slide 7 — First Rule: Plan Before Action
 
 **Label:** Demo
 **Title:** Establish an Agent Workflow
@@ -88,14 +108,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 7 — Section Break
+## Slide 8 — Section Break
 
 **Tag:** Part 2
 **Title:** Agentic Reorganization
 
 * * *
 
-## Slide 8 — Agentic Documentation
+## Slide 9 — Agentic Documentation
 
 **Label:** Tool
 **Title:** Create `AGENTS.md`
@@ -108,7 +128,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 9 — Directory Reorganization Demo
+## Slide 10 — Directory Reorganization Demo
 
 **Label:** Demo
 **Title:** Reorganize the Folder with Approval
@@ -123,14 +143,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 10 — Section Break
+## Slide 11 — Section Break
 
 **Tag:** Part 3
 **Title:** Prototype + Publish
 
 * * *
 
-## Slide 11 — Vibe-Coding the Prototype
+## Slide 12 — Vibe-Coding the Prototype
 
 **Label:** Demo
 **Title:** Build a Small Multi-File Web App
@@ -144,7 +164,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 12 — Push to GitHub
+## Slide 13 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -156,7 +176,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 13 — Enable GitHub Pages
+## Slide 14 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
@@ -171,7 +191,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 14 — Resources
+## Slide 15 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -191,4 +211,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-06. Deck has 14 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-06. Deck has 15 slides. Update both this file and `index.html` together._

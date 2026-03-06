@@ -224,6 +224,34 @@
     }
     .stageList li { margin: 10px 0; }
 
+    /* side-by-side compare */
+    .stageCompare {
+      position: relative; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      align-items: stretch;
+    }
+    .stageCompare .col {
+      padding: clamp(24px,3.5vw,44px) clamp(20px,2.8vw,36px);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .stageCompare .col + .col {
+      border-left: 1px solid rgba(255,255,255,0.08);
+    }
+    .stageCompare .col-tag {
+      display: inline-block; margin-bottom: 10px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--part);
+    }
+    .stageCompare .col-title {
+      font-weight: 700; letter-spacing: -0.01em;
+      font-size: clamp(20px,2.4vw,28px);
+      margin-bottom: 12px; color: rgba(255,255,255,0.9);
+    }
+    .stageCompare .col-sub {
+      font-size: clamp(16px,1.9vw,22px);
+      color: var(--muted); line-height: 1.55; opacity: 0.85;
+    }
+
     /* step rows */
     .step-grid {
       position: relative; width: 100%;
@@ -368,6 +396,7 @@
       .slide-break.active { flex-direction: column; overflow: hidden; }
       #kbdSwipe { display: none; }
       .stageCenter { position: absolute; inset: 0; width: auto; }
+      .stageCompare { position: absolute; inset: 0; width: auto; overflow-y: auto; }
       .step-grid { position: absolute; inset: clamp(12px,2vw,24px); width: auto; overflow-y: auto; }
       .agenda-table { position: absolute; inset: 0; width: auto; overflow-y: auto; }
       .res-wrap { position: absolute; inset: 0; width: auto; overflow-y: auto; }
@@ -484,8 +513,9 @@
             <span class="agenda-section-time">30m</span>
           </div>
           <a class="agenda-item" href="#4"><span class="agenda-item-label">Authenticate with GitHub CLI</span></a>
-          <a class="agenda-item" href="#5"><span class="agenda-item-label">Install and Launch Gemini CLI</span></a>
-          <a class="agenda-item" href="#6"><span class="agenda-item-label">Establish an Agent Workflow</span></a>
+          <a class="agenda-item" href="#5"><span class="agenda-item-label">Install Homebrew / Node.js</span></a>
+          <a class="agenda-item" href="#6"><span class="agenda-item-label">Install and Launch Gemini CLI</span></a>
+          <a class="agenda-item" href="#7"><span class="agenda-item-label">Establish an Agent Workflow</span></a>
         </div>
 
         <div class="agenda-section">
@@ -493,8 +523,8 @@
             <span class="agenda-section-title">Part 2 &mdash; Agentic Reorganization</span>
             <span class="agenda-section-time">30m</span>
           </div>
-          <a class="agenda-item" href="#8"><span class="agenda-item-label">Create <code>AGENTS.md</code></span></a>
-          <a class="agenda-item" href="#9"><span class="agenda-item-label">Reorganize the Folder with Approval</span></a>
+          <a class="agenda-item" href="#9"><span class="agenda-item-label">Create <code>AGENTS.md</code></span></a>
+          <a class="agenda-item" href="#10"><span class="agenda-item-label">Reorganize the Folder with Approval</span></a>
         </div>
 
         <div class="agenda-section">
@@ -502,10 +532,10 @@
             <span class="agenda-section-title">Part 3 &mdash; Prototype + Publish</span>
             <span class="agenda-section-time">30m</span>
           </div>
-          <a class="agenda-item" href="#11"><span class="agenda-item-label">Build a Small Multi-File Web App</span></a>
-          <a class="agenda-item" href="#12"><span class="agenda-item-label">Push to GitHub</span></a>
-          <a class="agenda-item" href="#13"><span class="agenda-item-label">Enable GitHub Pages</span></a>
-          <a class="agenda-item" href="#14"><span class="agenda-item-label">Links &amp; References</span></a>
+          <a class="agenda-item" href="#12"><span class="agenda-item-label">Build a Small Multi-File Web App</span></a>
+          <a class="agenda-item" href="#13"><span class="agenda-item-label">Push to GitHub</span></a>
+          <a class="agenda-item" href="#14"><span class="agenda-item-label">Enable GitHub Pages</span></a>
+          <a class="agenda-item" href="#15"><span class="agenda-item-label">Links &amp; References</span></a>
         </div>
 
       </div>
@@ -539,7 +569,42 @@
     </div>
   </section>
 
-  <!-- 5 · GEMINI CLI SETUP -->
+  <!-- 5 · INSTALL HOMEBREW / NODE.JS -->
+  <section class="slide" data-slide="brew-setup" aria-label="Install Homebrew or Node.js">
+    <div class="content">
+      <div class="label">Setup</div>
+      <h1>Install Homebrew / Node.js</h1>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="stageCompare">
+        <div class="col">
+          <div class="col-tag">macOS</div>
+          <div class="col-title">Terminal</div>
+          <div class="col-sub">
+            1. Install Homebrew from <a href="https://brew.sh/" target="_blank" rel="noopener">brew.sh</a><br>
+            2. Add Homebrew to PATH:
+            <span class="code-block">echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' \
+  >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"</span>
+            3. Confirm with:
+            <span class="code-block">brew --version</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-tag">Windows</div>
+          <div class="col-title">PowerShell</div>
+          <div class="col-sub">
+            1. Install Node.js LTS from <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">nodejs.org</a><br>
+            2. Reopen PowerShell<br>
+            3. Confirm with:
+            <span class="code-block">node --version</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · GEMINI CLI SETUP -->
   <section class="slide" data-slide="gemini-setup" aria-label="Install and Launch Gemini CLI">
     <div class="content">
       <div class="label">Setup</div>
@@ -557,7 +622,7 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 6 · ESTABLISH AN AGENT WORKFLOW -->
+  <!-- 7 · ESTABLISH AN AGENT WORKFLOW -->
   <section class="slide" data-slide="agent-workflow" aria-label="Establish an Agent Workflow">
     <div class="content">
       <div class="label">Demo</div>
@@ -574,7 +639,7 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 7 · SECTION BREAK: PART 2 -->
+  <!-- 8 · SECTION BREAK: PART 2 -->
   <section class="slide slide-break" data-slide="part2" style="--part:#5a8dee;" aria-label="Part 2 section break">
     <div class="content">
       <div class="break-tag">Part 2</div>
@@ -582,7 +647,7 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 8 · CREATE AGENTS.MD -->
+  <!-- 9 · CREATE AGENTS.MD -->
   <section class="slide" data-slide="agents-md" aria-label="Create AGENTS.md">
     <div class="content">
       <div class="label">Tool</div>
@@ -598,7 +663,7 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 9 · REORGANIZE THE FOLDER -->
+  <!-- 10 · REORGANIZE THE FOLDER -->
   <section class="slide" data-slide="reorg" aria-label="Reorganize the Folder with Approval">
     <div class="content">
       <div class="label">Demo</div>
@@ -620,7 +685,7 @@ assets/
     </div>
   </section>
 
-  <!-- 10 · SECTION BREAK: PART 3 -->
+  <!-- 11 · SECTION BREAK: PART 3 -->
   <section class="slide slide-break" data-slide="part3" style="--part:#2ea043;" aria-label="Part 3 section break">
     <div class="content">
       <div class="break-tag">Part 3</div>
@@ -628,7 +693,7 @@ assets/
     </div>
   </section>
 
-  <!-- 11 · BUILD A SMALL WEB APP -->
+  <!-- 12 · BUILD A SMALL WEB APP -->
   <section class="slide" data-slide="build" aria-label="Build a Small Multi-File Web App">
     <div class="content">
       <div class="label">Demo</div>
@@ -645,7 +710,7 @@ assets/
     </div>
   </section>
 
-  <!-- 12 · PUSH TO GITHUB -->
+  <!-- 13 · PUSH TO GITHUB -->
   <section class="slide" data-slide="push" aria-label="Push to GitHub">
     <div class="content">
       <div class="label">Publish</div>
@@ -660,7 +725,7 @@ assets/
     </div>
   </section>
 
-  <!-- 13 · ENABLE GITHUB PAGES -->
+  <!-- 14 · ENABLE GITHUB PAGES -->
   <section class="slide" data-slide="pages" aria-label="Enable GitHub Pages">
     <div class="content">
       <div class="label">Publish</div>
@@ -678,7 +743,7 @@ assets/
     </div>
   </section>
 
-  <!-- 14 · RESOURCES -->
+  <!-- 15 · RESOURCES -->
   <section class="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>
@@ -766,13 +831,13 @@ assets/
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="14" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="15" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 14</span>
+      <span id="slider-counter">1 / 15</span>
       <span class="kbd">Space</span>
     </div>
   </div>
