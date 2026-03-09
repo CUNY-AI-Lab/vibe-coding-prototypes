@@ -41,14 +41,30 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 3 — Section Break
+## Slide 3 — Review: Last Session
+
+**Label:** Review
+**Title:** Last Session
+**Link:** [Workshop #1 deck](https://cuny-ai-lab.github.io/gen-dev-foundations/#1)
+
+**Stage (step-grid, fragments):**
+1. How do **LLMs** generate code?
+   → Code is just another language pattern. The model predicts the next token based on syntax, structure, and problem-solving patterns learned from training data.
+2. What are the **four commands** we learned through the CLI?
+   → `pwd` print working directory · `cd` change directory · `cd ..` go up one level · `ls` list files
+3. What is **git** and what does it do?
+   → A version-control system that tracks every change so you can go back in time, undo mistakes, and work in parallel.
+
+* * *
+
+## Slide 4 — Section Break
 
 **Tag:** Part 1
 **Title:** Setup
 
 * * *
 
-## Slide 4 — Install Homebrew / Node.js
+## Slide 5 — Install Homebrew / Node.js
 
 **Label:** Setup
 **Title:** Install Homebrew / Node.js
@@ -67,7 +83,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 5 — Gemini CLI Setup
+## Slide 6 — Gemini CLI Setup
 
 **Label:** Setup
 **Title:** Install and Launch Gemini CLI
@@ -81,14 +97,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 6 — Section Break
+## Slide 7 — Section Break
 
 **Tag:** Part 2
 **Title:** Agentic Workflows
 
 * * *
 
-## Slide 7 — Directory Reorganization Demo
+## Slide 8 — Directory Reorganization Demo
 
 **Label:** Demo
 **Title:** Reorganize the Folder with Approval
@@ -105,7 +121,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 8 — Establish an Agent Workflow
+## Slide 9 — Establish an Agent Workflow
 
 **Label:** Demo
 **Title:** Establish an Agent Workflow
@@ -117,7 +133,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 9 — Agentic Documentation
+## Slide 10 — Agentic Documentation
 
 **Label:** Tool
 **Title:** Create `AGENTS.md`
@@ -130,7 +146,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 10 — Verify the Reorganized Project
+## Slide 11 — Verify the Reorganized Project
 
 **Label:** Demo
 **Title:** Verify the Reorganized Project
@@ -143,14 +159,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 11 — Section Break
+## Slide 12 — Section Break
 
 **Tag:** Part 3
 **Title:** Prototype + Publish
 
 * * *
 
-## Slide 12 — Customize the Focus Timer
+## Slide 13 — Customize the Focus Timer
 
 **Label:** Demo
 **Title:** Customize the Focus Timer
@@ -164,7 +180,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 13 — Authenticate with GitHub CLI
+## Slide 14 — Authenticate with GitHub CLI
 
 **Label:** Publish
 **Title:** Authenticate with GitHub CLI
@@ -178,7 +194,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 14 — Create Remote Repository
+## Slide 15 — Create Remote Repository
 
 **Label:** Publish
 **Title:** Create Remote Repository
@@ -190,7 +206,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 15 — Push to GitHub
+## Slide 16 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -202,7 +218,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 16 — Enable GitHub Pages
+## Slide 17 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
@@ -218,7 +234,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 17 — Resources
+## Slide 18 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -238,4 +254,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-09. Deck has 17 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-09. Deck has 18 slides. Update both this file and `index.html` together._
