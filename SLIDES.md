@@ -166,7 +166,21 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 13 — Customize the Focus Timer
+## Slide 13 — Open & Test the Project
+
+**Label:** Demo
+**Title:** Open & Test the Project
+
+**Stage (step-grid, fragments):**
+1. Open your reorganized project folder
+2. Double-click `index.html` to open it in the browser
+3. Try the focus timer — does it start, pause, and reset?
+4. Check the console for errors (`Cmd+Option+J` / `Ctrl+Shift+J`)
+5. If something's broken, ask Gemini to fix it before moving on
+
+* * *
+
+## Slide 14 — Customize the Focus Timer
 
 **Label:** Demo
 **Title:** Customize the Focus Timer
@@ -180,7 +194,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 14 — Authenticate with GitHub CLI
+## Slide 15 — Authenticate with GitHub CLI
 
 **Label:** Publish
 **Title:** Authenticate with GitHub CLI
@@ -194,7 +208,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 15 — Create Remote Repository
+## Slide 16 — Create Remote Repository
 
 **Label:** Publish
 **Title:** Create Remote Repository
@@ -206,7 +220,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 16 — Push to GitHub
+## Slide 17 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -218,7 +232,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 17 — Enable GitHub Pages
+## Slide 18 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
@@ -234,7 +248,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 18 — Resources
+## Slide 19 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -254,4 +268,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-09. Deck has 18 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-09. Deck has 19 slides. Update both this file and `index.html` together._
