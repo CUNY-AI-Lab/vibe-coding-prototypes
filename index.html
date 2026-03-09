@@ -155,7 +155,7 @@
       flex-direction: column; align-items: stretch;
     }
     [data-slide="title"] .content {
-      flex: 1 0 auto; overflow: visible;
+      flex: 0 0 auto; overflow: visible;
       padding-bottom: clamp(20px,2.5vw,32px);
     }
     .title-credit {
@@ -363,6 +363,17 @@
     }
     .dir-tree .hl { color: var(--accent); }
 
+    /* download link */
+    .download-link {
+      display: inline-block; margin-top: clamp(14px,1.5vw,20px);
+      padding: clamp(8px,1vw,12px) clamp(16px,2vw,24px);
+      background: var(--accent); color: #fff; text-decoration: none;
+      border-radius: 6px; font-size: clamp(15px,1.5vw,19px); font-weight: 600;
+      transition: background .2s;
+    }
+    .download-link:hover { background: #4a7cd8; }
+    .download-link::before { content: "\2B07\FE0F\00A0"; }
+
     /* ── TYPOGRAPHY ── */
     .content h1 { font-size: clamp(42px,6vw,68px); letter-spacing: -0.025em; line-height: 1.08; margin-bottom: 8px; }
     .content h2 { font-size: clamp(24px,3vw,38px); color: var(--muted); font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; margin-bottom: 10px; }
@@ -509,33 +520,35 @@
 
         <div class="agenda-section">
           <div class="agenda-section-head">
-            <span class="agenda-section-title">Part 1 &mdash; Authentication + Setup</span>
-            <span class="agenda-section-time">30m</span>
+            <span class="agenda-section-title">Part 1 &mdash; Setup</span>
+            <span class="agenda-section-time">15m</span>
           </div>
-          <a class="agenda-item" href="#4"><span class="agenda-item-label">Authenticate with GitHub CLI</span></a>
-          <a class="agenda-item" href="#5"><span class="agenda-item-label">Install Homebrew / Node.js</span></a>
-          <a class="agenda-item" href="#6"><span class="agenda-item-label">Install and Launch Gemini CLI</span></a>
-          <a class="agenda-item" href="#7"><span class="agenda-item-label">Establish an Agent Workflow</span></a>
+          <a class="agenda-item" href="#4"><span class="agenda-item-label">Install Homebrew / Node.js</span></a>
+          <a class="agenda-item" href="#5"><span class="agenda-item-label">Install and Launch Gemini CLI</span></a>
         </div>
 
         <div class="agenda-section">
           <div class="agenda-section-head">
-            <span class="agenda-section-title">Part 2 &mdash; Agentic Reorganization</span>
-            <span class="agenda-section-time">30m</span>
+            <span class="agenda-section-title">Part 2 &mdash; Agentic Workflows</span>
+            <span class="agenda-section-time">35m</span>
           </div>
+          <a class="agenda-item" href="#7"><span class="agenda-item-label">Reorganize the Folder with Approval</span></a>
+          <a class="agenda-item" href="#8"><span class="agenda-item-label">Establish an Agent Workflow</span></a>
           <a class="agenda-item" href="#9"><span class="agenda-item-label">Create <code>AGENTS.md</code></span></a>
-          <a class="agenda-item" href="#10"><span class="agenda-item-label">Reorganize the Folder with Approval</span></a>
+          <a class="agenda-item" href="#10"><span class="agenda-item-label">Verify the Reorganized Project</span></a>
         </div>
 
         <div class="agenda-section">
           <div class="agenda-section-head">
             <span class="agenda-section-title">Part 3 &mdash; Prototype + Publish</span>
-            <span class="agenda-section-time">30m</span>
+            <span class="agenda-section-time">40m</span>
           </div>
-          <a class="agenda-item" href="#12"><span class="agenda-item-label">Build a Small Multi-File Web App</span></a>
-          <a class="agenda-item" href="#13"><span class="agenda-item-label">Push to GitHub</span></a>
-          <a class="agenda-item" href="#14"><span class="agenda-item-label">Enable GitHub Pages</span></a>
-          <a class="agenda-item" href="#15"><span class="agenda-item-label">Links &amp; References</span></a>
+          <a class="agenda-item" href="#12"><span class="agenda-item-label">Customize the Focus Timer</span></a>
+          <a class="agenda-item" href="#13"><span class="agenda-item-label">Authenticate with GitHub CLI</span></a>
+          <a class="agenda-item" href="#14"><span class="agenda-item-label">Create Remote Repository</span></a>
+          <a class="agenda-item" href="#15"><span class="agenda-item-label">Push to GitHub</span></a>
+          <a class="agenda-item" href="#16"><span class="agenda-item-label">Enable GitHub Pages</span></a>
+          <a class="agenda-item" href="#17"><span class="agenda-item-label">Links &amp; References</span></a>
         </div>
 
       </div>
@@ -546,30 +559,12 @@
   <section class="slide slide-break" data-slide="part1" aria-label="Part 1 section break">
     <div class="content">
       <div class="break-tag">Part 1</div>
-      <h1>Authentication + Setup</h1>
+      <h1>Setup</h1>
     </div>
   </section>
 
-  <!-- 4 · GITHUB CLI AUTHENTICATION -->
-  <section class="slide" data-slide="gh-auth" aria-label="Authenticate with GitHub CLI">
-    <div class="content">
-      <div class="label">Setup</div>
-      <h1>Authenticate with GitHub CLI</h1>
-    </div>
-    <div class="stage" aria-hidden="true">
-      <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Open the terminal in VS Code</div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Run <code>gh auth login</code></div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Choose <strong>GitHub.com</strong></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Choose <strong>HTTPS</strong></div></div>
-        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Choose <strong>Login with a web browser</strong></div></div>
-        <div class="step-row frag"><div class="step-num">6</div><div class="step-text">Complete authentication in the browser</div></div>
-        <div class="step-row frag"><div class="step-num">7</div><div class="step-text">Confirm with <code>gh auth status</code></div></div>
-      </div>
-    </div>
-  </section>
+  <!-- 4 · INSTALL HOMEBREW / NODE.JS -->
 
-  <!-- 5 · INSTALL HOMEBREW / NODE.JS -->
   <section class="slide" data-slide="brew-setup" aria-label="Install Homebrew or Node.js">
     <div class="content">
       <div class="label">Setup</div>
@@ -604,7 +599,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
     </div>
   </section>
 
-  <!-- 6 · GEMINI CLI SETUP -->
+  <!-- 5 · GEMINI CLI SETUP -->
   <section class="slide" data-slide="gemini-setup" aria-label="Install and Launch Gemini CLI">
     <div class="content">
       <div class="label">Setup</div>
@@ -622,7 +617,39 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 7 · ESTABLISH AN AGENT WORKFLOW -->
+  <!-- 6 · SECTION BREAK: PART 2 -->
+  <section class="slide slide-break" data-slide="part2" style="--part:#5a8dee;" aria-label="Part 2 section break">
+    <div class="content">
+      <div class="break-tag">Part 2</div>
+      <h1>Agentic Workflows</h1>
+    </div>
+  </section>
+
+  <!-- 7 · REORGANIZE THE FOLDER -->
+  <section class="slide" data-slide="reorg" aria-label="Reorganize the Folder with Approval">
+    <div class="content">
+      <div class="label">Demo</div>
+      <h1>Reorganize the Folder with Approval</h1>
+      <a class="download-link" href="src/project-prototype.zip" download>Download starter files</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="stageCenter">
+        <div class="stageInner">
+          <div class="stageBig">Unzip the starter folder &mdash; it&rsquo;s intentionally messy.</div>
+          <div class="stageHint frag">Ask Gemini to inspect, propose a plan, and reorganize with approval:</div>
+          <div class="dir-tree frag">
+<span class="hl">index.html</span>
+css/<span class="hl">style.css</span>
+js/<span class="hl">main.js</span>
+assets/<span class="hl">icon.svg</span>
+assets/<span class="hl">config.json</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · ESTABLISH AN AGENT WORKFLOW -->
   <section class="slide" data-slide="agent-workflow" aria-label="Establish an Agent Workflow">
     <div class="content">
       <div class="label">Demo</div>
@@ -639,14 +666,6 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 8 · SECTION BREAK: PART 2 -->
-  <section class="slide slide-break" data-slide="part2" style="--part:#5a8dee;" aria-label="Part 2 section break">
-    <div class="content">
-      <div class="break-tag">Part 2</div>
-      <h1>Agentic Reorganization</h1>
-    </div>
-  </section>
-
   <!-- 9 · CREATE AGENTS.MD -->
   <section class="slide" data-slide="agents-md" aria-label="Create AGENTS.md">
     <div class="content">
@@ -655,32 +674,26 @@ npm install -g @google/gemini-cli  # Windows</span></div></div>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">State the purpose of the project</div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Define file structure expectations</div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Require plan + approval before structural changes</div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Require a summary of changes after completion</div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">State the project overview and purpose</div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Define file structure and code style conventions</div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Include build, test, and setup commands</div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Add anything you'd tell a new teammate</div></div>
       </div>
     </div>
   </section>
 
-  <!-- 10 · REORGANIZE THE FOLDER -->
-  <section class="slide" data-slide="reorg" aria-label="Reorganize the Folder with Approval">
+  <!-- 10 · VERIFY THE REORGANIZED PROJECT -->
+  <section class="slide" data-slide="verify" aria-label="Verify the Reorganized Project">
     <div class="content">
       <div class="label">Demo</div>
-      <h1>Reorganize the Folder with Approval</h1>
+      <h1>Verify the Reorganized Project</h1>
     </div>
     <div class="stage" aria-hidden="true">
-      <div class="stageCenter">
-        <div class="stageInner">
-          <div class="stageBig">Use Gemini to inspect the current folder, propose a cleaner structure, and wait for approval.</div>
-          <div class="stageHint">Then move toward a simple layout:</div>
-          <div class="dir-tree frag">
-<span class="hl">index.html</span>
-css/<span class="hl">style.css</span>
-js/<span class="hl">script.js</span>
-assets/
-          </div>
-        </div>
+      <div class="step-grid">
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Open <code>index.html</code> in the browser</div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Confirm the focus timer still works</div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Check that styles, scripts, and assets load correctly</div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Review the clean file tree: <code>css/</code>, <code>js/</code>, <code>assets/</code></div></div>
       </div>
     </div>
   </section>
@@ -693,16 +706,16 @@ assets/
     </div>
   </section>
 
-  <!-- 12 · BUILD A SMALL WEB APP -->
-  <section class="slide" data-slide="build" aria-label="Build a Small Multi-File Web App">
+  <!-- 12 · CUSTOMIZE THE FOCUS TIMER -->
+  <section class="slide" data-slide="build" aria-label="Customize the Focus Timer">
     <div class="content">
       <div class="label">Demo</div>
-      <h1>Build a Small Multi-File Web App</h1>
+      <h1>Customize the Focus Timer</h1>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Prompt Gemini to scaffold a simple app</div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Keep HTML, CSS, and JavaScript in separate files</div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Prompt Gemini to add a feature &mdash; e.g. session history, sound alerts, or custom intervals</div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Keep changes in the right files: CSS in <code>css/</code>, JS in <code>js/</code></div></div>
         <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Test locally in the browser</div></div>
         <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Revise one change at a time</div></div>
         <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Keep the app simple enough to publish today</div></div>
@@ -710,7 +723,40 @@ assets/
     </div>
   </section>
 
-  <!-- 13 · PUSH TO GITHUB -->
+  <!-- 13 · AUTHENTICATE WITH GITHUB CLI -->
+  <section class="slide" data-slide="gh-auth" aria-label="Authenticate with GitHub CLI">
+    <div class="content">
+      <div class="label">Publish</div>
+      <h1>Authenticate with GitHub CLI</h1>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="step-grid">
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Install GitHub CLI<span class="code-block">brew install gh          # macOS
+npm install -g gh        # Windows</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Run <code>gh auth login</code></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Choose <strong>GitHub.com</strong> &rarr; <strong>HTTPS</strong> &rarr; <strong>Login with a web browser</strong></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Complete authentication in the browser</div></div>
+        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Confirm with <code>gh auth status</code></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · CREATE REMOTE REPOSITORY -->
+  <section class="slide" data-slide="create-repo" aria-label="Create Remote Repository">
+    <div class="content">
+      <div class="label">Publish</div>
+      <h1>Create Remote Repository</h1>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="step-grid">
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Initialize git locally:<span class="code-block">git init</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Create the repo on GitHub:<span class="code-block">gh repo create REPO --public --source=.</span></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Confirm the remote is set:<span class="code-block">git remote -v</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 · PUSH TO GITHUB -->
   <section class="slide" data-slide="push" aria-label="Push to GitHub">
     <div class="content">
       <div class="label">Publish</div>
@@ -725,7 +771,8 @@ assets/
     </div>
   </section>
 
-  <!-- 14 · ENABLE GITHUB PAGES -->
+  <!-- 16 · ENABLE GITHUB PAGES -->
+
   <section class="slide" data-slide="pages" aria-label="Enable GitHub Pages">
     <div class="content">
       <div class="label">Publish</div>
@@ -743,7 +790,7 @@ assets/
     </div>
   </section>
 
-  <!-- 15 · RESOURCES -->
+  <!-- 17 · RESOURCES -->
   <section class="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>
@@ -831,13 +878,13 @@ assets/
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="15" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="17" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 15</span>
+      <span id="slider-counter">1 / 17</span>
       <span class="kbd">Space</span>
     </div>
   </div>

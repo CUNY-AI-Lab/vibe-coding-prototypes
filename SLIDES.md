@@ -22,19 +22,20 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 **Stage (agenda table):**
 
-Part 1 — Authentication + Setup:
-- Authenticate with GitHub CLI
+Part 1 — Setup:
 - Install Homebrew / Node.js
 - Install and launch Gemini CLI
-- Establish an agent workflow in the terminal
 
-Part 2 — Agentic Reorganization:
-- Draft `AGENTS.md`
-- Require a plan and approval statement
-- Reorganize a project directory
+Part 2 — Agentic Workflows:
+- Reorganize the folder with approval
+- Establish an agent workflow
+- Create `AGENTS.md`
+- Verify the reorganized project
 
 Part 3 — Prototype + Publish:
-- Build a small multi-file web app
+- Customize the focus timer
+- Authenticate with GitHub CLI
+- Create remote repository
 - Push to GitHub
 - Deploy to GitHub Pages
 
@@ -43,27 +44,11 @@ Part 3 — Prototype + Publish:
 ## Slide 3 — Section Break
 
 **Tag:** Part 1
-**Title:** Authentication + Setup
+**Title:** Setup
 
 * * *
 
-## Slide 4 — GitHub CLI Authentication
-
-**Label:** Setup
-**Title:** Authenticate with GitHub CLI
-
-**Stage (step-grid, fragments):**
-1. Open the terminal in VS Code
-2. Run `gh auth login`
-3. Choose GitHub.com
-4. Choose HTTPS
-5. Choose login with a web browser
-6. Complete authentication
-7. Confirm with `gh auth status`
-
-* * *
-
-## Slide 5 — Install Homebrew / Node.js
+## Slide 4 — Install Homebrew / Node.js
 
 **Label:** Setup
 **Title:** Install Homebrew / Node.js
@@ -82,7 +67,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 6 — Gemini CLI Setup
+## Slide 5 — Gemini CLI Setup
 
 **Label:** Setup
 **Title:** Install and Launch Gemini CLI
@@ -96,7 +81,31 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 7 — First Rule: Plan Before Action
+## Slide 6 — Section Break
+
+**Tag:** Part 2
+**Title:** Agentic Workflows
+
+* * *
+
+## Slide 7 — Directory Reorganization Demo
+
+**Label:** Demo
+**Title:** Reorganize the Folder with Approval
+**Download:** `src/project-prototype.zip` — functional but messy focus timer (11 files, flat)
+
+**Stage (stageCenter, fragments):**
+- **Big:** Unzip the starter folder — it's intentionally messy.
+- Ask Gemini to inspect, propose a plan, and reorganize with approval:
+  - `index.html`
+  - `css/style.css`
+  - `js/main.js`
+  - `assets/icon.svg`
+  - `assets/config.json`
+
+* * *
+
+## Slide 8 — Establish an Agent Workflow
 
 **Label:** Demo
 **Title:** Establish an Agent Workflow
@@ -108,38 +117,29 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 8 — Section Break
-
-**Tag:** Part 2
-**Title:** Agentic Reorganization
-
-* * *
-
 ## Slide 9 — Agentic Documentation
 
 **Label:** Tool
 **Title:** Create `AGENTS.md`
 
 **Stage (step-grid, fragments):**
-1. State the purpose of the project
-2. Define file structure expectations
-3. Require plan + approval before structural changes
-4. Require a summary of changes after completion
+1. State the project overview and purpose
+2. Define file structure and code style conventions
+3. Include build, test, and setup commands
+4. Add anything you'd tell a new teammate
 
 * * *
 
-## Slide 10 — Directory Reorganization Demo
+## Slide 10 — Verify the Reorganized Project
 
 **Label:** Demo
-**Title:** Reorganize the Folder with Approval
+**Title:** Verify the Reorganized Project
 
-**Stage (stageCenter):**
-- **Big:** Use Gemini to inspect the current folder, propose a cleaner structure, and wait for approval.
-- Then move toward a simple layout:
-  - `index.html`
-  - `css/style.css`
-  - `js/script.js`
-  - `assets/`
+**Stage (step-grid, fragments):**
+1. Open `index.html` in the browser
+2. Confirm the focus timer still works
+3. Check that styles, scripts, and assets load correctly
+4. Review the clean file tree: `css/`, `js/`, `assets/`
 
 * * *
 
@@ -150,21 +150,47 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 12 — Vibe-Coding the Prototype
+## Slide 12 — Customize the Focus Timer
 
 **Label:** Demo
-**Title:** Build a Small Multi-File Web App
+**Title:** Customize the Focus Timer
 
 **Stage (step-grid, fragments):**
-1. Prompt Gemini to scaffold a simple app
-2. Keep HTML, CSS, and JavaScript in separate files
+1. Prompt Gemini to add a feature — e.g. session history, sound alerts, or custom intervals
+2. Keep changes in the right files: CSS in `css/`, JS in `js/`
 3. Test locally in the browser
 4. Revise one change at a time
 5. Keep the app simple enough to publish today
 
 * * *
 
-## Slide 13 — Push to GitHub
+## Slide 13 — Authenticate with GitHub CLI
+
+**Label:** Publish
+**Title:** Authenticate with GitHub CLI
+
+**Stage (step-grid, fragments):**
+1. Install GitHub CLI (`brew install gh` on macOS, `npm install -g gh` on Windows)
+2. Run `gh auth login`
+3. Choose GitHub.com → HTTPS → Login with a web browser
+4. Complete authentication in the browser
+5. Confirm with `gh auth status`
+
+* * *
+
+## Slide 14 — Create Remote Repository
+
+**Label:** Publish
+**Title:** Create Remote Repository
+
+**Stage (step-grid, fragments):**
+1. Initialize git locally: `git init`
+2. Create the repo on GitHub: `gh repo create REPO --public --source=.`
+3. Confirm the remote is set: `git remote -v`
+
+* * *
+
+## Slide 15 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -176,12 +202,13 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 14 — Enable GitHub Pages
+## Slide 16 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
 
 **Stage (step-grid, fragments):**
+
 1. Go to `github.com/USERNAME/REPO`
 2. Click the **Settings** tab
 3. Click **Pages** in the left sidebar
@@ -191,7 +218,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 15 — Resources
+## Slide 17 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -211,4 +238,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-06. Deck has 15 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-09. Deck has 17 slides. Update both this file and `index.html` together._
