@@ -11,8 +11,25 @@ A static slide deck for **CAIL Spotlight Workshop #2: Vibe-Coding Prototypes**. 
 - **`index.html`** — Single-file slide deck. All slides are `<section class="slide">` elements inside `<main>`. All CSS is inlined in `<style>`. No external stylesheets.
 - **`src/slides.js`** — Slide engine: keyboard/touch/scrubber navigation, progressive fragment reveal (`.frag` class), overview mode (Escape key), hash-based routing.
 - **`src/chladni.html`** — Standalone canvas animation embedded as an iframe in the title slide.
+- **`src/prototype.zip`** — Downloadable starter files (messy focus-timer project) used in the workshop demo. Referenced by the "Reorganize the Folder" slide.
 - **`SLIDES.md`** — Plain-text mirror of slide content. Must stay in sync with `index.html` whenever slide text changes. Includes slide count in the last line.
-- **`img/`** — Logo assets referenced by the title slide.
+- **`img/`** — Logo and QR code assets referenced by the title slide.
+
+## CSS Design Tokens
+
+All styling lives in the `<style>` block in `index.html`. Key custom properties on `:root`:
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--bg` | `#0b0e14` | Page background |
+| `--fg` | `rgba(255,255,255,0.92)` | Primary text |
+| `--muted` | `rgba(255,255,255,0.55)` | Secondary / dimmed text |
+| `--accent` | `#79c0ff` | Links, active-slide highlight |
+| `--part` | `#b89060` | Section-break part labels (warm gold) |
+| `--card` | `rgba(255,255,255,0.055)` | Card / stage background |
+| `--stroke` | `rgba(255,255,255,0.13)` | Borders |
+
+Use these tokens instead of raw color values when editing styles.
 
 ## Slide System Conventions
 
@@ -35,7 +52,6 @@ When adding, removing, or reordering slides:
 
 - On desktop (≥720px), `.agenda-table`, `.step-grid`, `.stageCenter`, `.stageCompare`, and `.res-wrap` become `position: absolute; inset: 0` with `overflow-y: auto`. Content that exceeds the viewport height scrolls inside the stage — new items added to the top may be clipped if the total height overflows.
 - The agenda slide (`data-slide="agenda"`) is the most size-sensitive. When adding sections, reduce `margin-bottom` on `.agenda-section` if needed to keep all parts visible without scrolling.
-- **`src/prototype.zip`** — Downloadable starter files (messy focus-timer project) used in the workshop demo. Referenced by the "Reorganize the Folder" slide.
 
 ## Development
 
@@ -43,7 +59,7 @@ No install or build step. Open `index.html` in a browser. Use any local server (
 
 ## Commit Style
 
-Short, lowercase messages with no sign-off. Examples from this repo:
+Short, lowercase messages — max 100 characters, no sign-off. Examples from this repo:
 ```
 scaffold vibe-coding prototypes deck — spotlight workshop #2
 split deploy slide into push + github pages navigation
