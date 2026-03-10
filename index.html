@@ -437,6 +437,10 @@
     }
 
     /* ── LARGE DESKTOP ── */
+    @media (min-width: 720px) and (max-width: 870px) {
+      [data-slide="title"] .content { max-width: none; width: 100%; }
+      [data-slide="title"] .stage { min-height: 40vh; }
+    }
     @media (min-width: 1024px) {
       [data-slide="title"] .stage { min-height: clamp(400px, 65vh, 900px); }
     }
@@ -582,7 +586,6 @@
           <a class="agenda-item" href="#22"><span class="agenda-item-label">Authenticate with GitHub CLI</span></a>
           <a class="agenda-item" href="#23"><span class="agenda-item-label">Create Remote Repository</span></a>
           <a class="agenda-item" href="#24"><span class="agenda-item-label">Push to GitHub</span></a>
-          <a class="agenda-item" href="#25"><span class="agenda-item-label">Enable GitHub Pages</span></a>
           <a class="agenda-item" href="#26"><span class="agenda-item-label">Links &amp; References</span></a>
         </div>
 
@@ -1019,47 +1022,15 @@ npm install -g gh        # Windows</span></div></div>
           <ul class="res-list">
             <li>
               <a href="https://ailab.gc.cuny.edu" target="_blank" rel="noopener">ailab.gc.cuny.edu</a>
-              <div class="res-desc">CUNY AI Lab &mdash; home page, announcements, and model notes</div>
-            </li>
-            <li>
-              <a href="https://ailab.gc.cuny.edu/resources" target="_blank" rel="noopener">ailab.gc.cuny.edu/resources</a>
-              <div class="res-desc">CAIL Resources &mdash; guides, readings, and workshop materials</div>
+              <div class="res-desc">CUNY AI Lab main site</div>
             </li>
             <li>
               <a href="https://chat.ailab.gc.cuny.edu" target="_blank" rel="noopener">chat.ailab.gc.cuny.edu</a>
-              <div class="res-desc">CAIL Sandbox (Open WebUI) &mdash; GLM 5, Kimi K2.5, and more</div>
+              <div class="res-desc">CAIL Sandbox (Open WebUI)</div>
             </li>
-            <li>
-              <a href="https://tools.ailab.gc.cuny.edu" target="_blank" rel="noopener">tools.ailab.gc.cuny.edu</a>
-              <div class="res-desc">CAIL Tools &mdash; additional lab utilities and experiments</div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="res-group">
-          <div class="res-group-title">GC Community</div>
-          <ul class="res-list">
-            <li>
-              <a href="https://newmedialab.cuny.edu" target="_blank" rel="noopener">newmedialab.cuny.edu</a>
-              <div class="res-desc">CUNY New Media Lab &mdash; workshop series host</div>
-            </li>
-            <li>
-              <a href="https://aitoolkit.gc.commons.edu" target="_blank" rel="noopener">aitoolkit.gc.commons.edu</a>
-              <div class="res-desc">GC AI Toolkit &mdash; curated tools and resources for the Graduate Center</div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="res-group">
-          <div class="res-group-title">Workshops</div>
-          <ul class="res-list">
             <li>
               <a href="https://github.com/cuny-ai-lab" target="_blank" rel="noopener">github.com/cuny-ai-lab</a>
-              <div class="res-desc">CUNY AI Lab on GitHub &mdash; open source repos, workshop decks, datasets</div>
-            </li>
-            <li>
-              <a href="https://cuny-ai-lab.github.io/gen-dev-foundations/" target="_blank" rel="noopener">cuny-ai-lab.github.io/gen-dev-foundations</a>
-              <div class="res-desc">Foundations Workshop deck &mdash; companion CAIL workshop #1</div>
+              <div class="res-desc">GitHub workshops and repos</div>
             </li>
           </ul>
         </div>
@@ -1068,16 +1039,20 @@ npm install -g gh        # Windows</span></div></div>
           <div class="res-group-title">Tools &amp; Docs</div>
           <ul class="res-list">
             <li>
-              <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener">code.visualstudio.com/docs</a>
-              <div class="res-desc">VS Code documentation &mdash; setup, extensions, integrated terminal</div>
+              <a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">github.com/google-gemini/gemini-cli</a>
+              <div class="res-desc">Gemini CLI</div>
             </li>
             <li>
-              <a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">github.com/google-gemini/gemini-cli</a>
-              <div class="res-desc">Gemini CLI &mdash; open-source AI coding agent that runs in your terminal</div>
+              <a href="https://cli.github.com" target="_blank" rel="noopener">cli.github.com</a>
+              <div class="res-desc">GitHub CLI</div>
             </li>
             <li>
               <a href="https://docs.github.com" target="_blank" rel="noopener">docs.github.com</a>
-              <div class="res-desc">GitHub documentation &mdash; repos, Pages, pull requests, Actions</div>
+              <div class="res-desc">GitHub documentation</div>
+            </li>
+            <li>
+              <a href="https://agents.md" target="_blank" rel="noopener">agents.md</a>
+              <div class="res-desc">AGENTS.md specification</div>
             </li>
           </ul>
         </div>
