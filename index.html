@@ -366,13 +366,15 @@
     /* download link */
     .download-link {
       display: inline-block; margin-top: clamp(14px,1.5vw,20px);
-      padding: clamp(8px,1vw,12px) clamp(16px,2vw,24px);
-      background: var(--accent); color: #fff; text-decoration: none;
-      border-radius: 6px; font-size: clamp(15px,1.5vw,19px); font-weight: 600;
-      transition: background .2s;
+      padding: clamp(6px,0.8vw,10px) clamp(14px,1.6vw,20px);
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--stroke); border-radius: var(--radius);
+      text-decoration: none; font-size: clamp(13px,1.3vw,16px);
+      font-weight: 500; letter-spacing: 0.04em;
+      transition: color .2s, border-color .2s;
     }
-    .download-link:hover { background: #4a7cd8; }
-    .download-link::before { content: "\2B07\FE0F\00A0"; }
+    .download-link:hover { color: var(--accent); border-color: var(--accent); }
+    .download-link::before { content: "\2193\00A0"; font-weight: 700; }
 
     /* ── TYPOGRAPHY ── */
     .content h1 { font-size: clamp(42px,6vw,68px); letter-spacing: -0.025em; line-height: 1.08; margin-bottom: 8px; }
