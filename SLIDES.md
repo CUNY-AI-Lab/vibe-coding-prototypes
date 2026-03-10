@@ -214,9 +214,12 @@ Part 3 — Prototype + Publish:
 **Title:** Planning Stage
 **Download:** `src/project-prototype.zip`
 
-**Stage (stageCenter, fragments):**
-- **Big:** Instruct the agent to propose a plan and wait for approval:
-- **Prompt:** "Propose a plan to reorganize this directory; wait for my approval to implement it."
+**Stage (step-grid, fragments):**
+
+1. Download and unzip the starter files
+2. `cd` into the unzipped folder from your terminal
+3. Run `gemini` to start the agent
+4. Instruct it to propose a plan and wait for approval: "Propose a plan to reorganize this directory; wait for my approval to implement it."
 
 * * *
 
