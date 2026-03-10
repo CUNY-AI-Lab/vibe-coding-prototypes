@@ -29,11 +29,11 @@ Part 1 — Setup:
 - Install Homebrew / Node.js
 - Install and launch Gemini CLI
 
-Part 2 — Agentic Workflows:
-- Reorganize the folder with approval
-- Establish an agent workflow
-- Create `AGENTS.md`
+Part 2 — Plan + Act:
+- Planning stage
+- Acting stage
 - Verify the reorganized project
+- Create `AGENTS.md`
 
 Part 3 — Prototype + Publish:
 - Customize the focus timer
@@ -204,19 +204,30 @@ Part 3 — Prototype + Publish:
 ## Slide 15 — Section Break
 
 **Tag:** Part 2
-**Title:** Agentic Workflows
+**Title:** Plan + Act
 
 * * *
 
-## Slide 16 — Directory Reorganization Demo
+## Slide 16 — Planning Stage
 
 **Label:** Demo
-**Title:** Reorganize the Folder with Approval
-**Download:** `src/project-prototype.zip` — functional but messy focus timer (11 files, flat)
+**Title:** Planning Stage
+**Download:** `src/project-prototype.zip`
 
 **Stage (stageCenter, fragments):**
-- **Big:** Unzip the starter folder — it's intentionally messy.
-- Ask Gemini to inspect, propose a plan, and reorganize with approval:
+- **Big:** Instruct the agent to propose a plan and wait for approval:
+- **Prompt:** "Propose a plan to reorganize this directory; wait for my approval to implement it."
+
+* * *
+
+## Slide 17 — Acting Stage
+
+**Label:** Demo
+**Title:** Acting Stage
+
+**Stage (stageCenter, fragments):**
+- **Big:** Review and modify the plan where relevant, then instruct the agent to act on it.
+- Target structure:
   - `index.html`
   - `css/style.css`
   - `js/main.js`
@@ -225,41 +236,29 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 17 — Establish an Agent Workflow
+## Slide 18 — Open and Test Project
 
 **Label:** Demo
-**Title:** Establish an Agent Workflow
+**Title:** Open and Test Project
 
-**Stage (stageCenter):**
-- **Big:** Before making changes, the agent must propose a plan and wait for approval.
-- **Prompt:** "Inspect this folder. Propose a plan before changing anything."
-- **Prompt:** "Do not create, move, or delete files until I approve the plan."
+**Stage (step-grid, fragments):**
+1. Check the file structure in terminal or Finder: `css/`, `js/`, `assets/`
+2. Double-click `index.html` to open in the browser
+3. Try the focus timer. Does it start, pause, and reset?
+4. Check the console for errors (`Cmd+Option+J` / `Ctrl+Shift+J`)
+5. If something's broken, ask Gemini to fix it before moving on
 
 * * *
 
-## Slide 18 — Agentic Documentation
+## Slide 19 — Create AGENTS.md
 
-**Label:** Tool
+**Label:** Demo
 **Title:** Create `AGENTS.md`
 
-**Stage (step-grid, fragments):**
-1. State the project overview and purpose
-2. Define file structure and code style conventions
-3. Include build, test, and setup commands
-4. Add anything you'd tell a new teammate
-
-* * *
-
-## Slide 19 — Verify the Reorganized Project
-
-**Label:** Demo
-**Title:** Verify the Reorganized Project
-
-**Stage (step-grid, fragments):**
-1. Open `index.html` in the browser
-2. Confirm the focus timer still works
-3. Check that styles, scripts, and assets load correctly
-4. Review the clean file tree: `css/`, `js/`, `assets/`
+**Stage (stageCenter, fragments):**
+- **Big:** Use the `/save` command to capture what the agent learned during reorganization:
+- **Prompt:** "/save"
+- Gemini writes an `AGENTS.md` that documents the project for future agentic use: purpose, file structure, and conventions all in one place.
 
 * * *
 
@@ -270,21 +269,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 21 — Open & Test the Project
-
-**Label:** Demo
-**Title:** Open & Test the Project
-
-**Stage (step-grid, fragments):**
-1. Open your reorganized project folder
-2. Double-click `index.html` to open it in the browser
-3. Try the focus timer — does it start, pause, and reset?
-4. Check the console for errors (`Cmd+Option+J` / `Ctrl+Shift+J`)
-5. If something's broken, ask Gemini to fix it before moving on
-
-* * *
-
-## Slide 22 — Customize the Focus Timer
+## Slide 21 — Customize the Focus Timer
 
 **Label:** Demo
 **Title:** Customize the Focus Timer
@@ -298,7 +283,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 23 — Authenticate with GitHub CLI
+## Slide 22 — Authenticate with GitHub CLI
 
 **Label:** Publish
 **Title:** Authenticate with GitHub CLI
@@ -312,7 +297,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 24 — Create Remote Repository
+## Slide 23 — Create Remote Repository
 
 **Label:** Publish
 **Title:** Create Remote Repository
@@ -324,7 +309,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 25 — Push to GitHub
+## Slide 24 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -336,7 +321,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 26 — Enable GitHub Pages
+## Slide 25 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
@@ -352,7 +337,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 27 — Resources
+## Slide 26 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -372,4 +357,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-09. Deck has 27 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-09. Deck has 26 slides. Update both this file and `index.html` together._
