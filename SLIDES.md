@@ -68,7 +68,6 @@ Part 3 — Prototype + Publish:
 
 **Stage (stageCenter):**
 - **Big:** You type something, it "types" back.
-- **Hint:** That's a chatbot — a text-in, text-out interface to a large language model.
 
 * * *
 
@@ -80,7 +79,7 @@ Part 3 — Prototype + Publish:
 **Stage (step-grid, fragments):**
 1. It's predicting the **next word** over and over, very fast
 2. Trained on a lot of text, learned patterns
-3. **Fluent** but not "grounded" — it can sound confident while being wrong
+3. **Fluent** but not "grounded"
 
 * * *
 
@@ -94,7 +93,7 @@ Part 3 — Prototype + Publish:
 1. Sometimes it **searches the web**
 2. Sometimes it **reads a file** you uploaded
 3. Sometimes it **runs code**
-4. A *tool* is a function the model can call — "search this," "fetch that," "calculate this."
+4. A *tool* is a function it can call: "search this," "fetch that," "calculate this"
 
 * * *
 
@@ -118,7 +117,7 @@ Part 3 — Prototype + Publish:
 **Stage (step-grid, fragments):**
 1. Something has to run the loop: send a prompt → check if it wants a tool → run the tool → feed the result back → repeat
 2. Examples: **Claude Code**, **Cursor**, **Gemini CLI**
-3. That's what people mean when they say "agentic" — **a system that can pursue a goal, planning and recovering on its own**
+3. That's what people mean when they say "agentic"
 
 * * *
 
@@ -126,13 +125,10 @@ Part 3 — Prototype + Publish:
 
 **Label:** Example
 **Title:** One tool call
-**Subtitle:** Not agentic — just helpful
-
 **Stage (step-grid, fragments):**
 - **Prompt:** "What's the most recent article in CUNY Academic Works about open access?"
 1. Searches the repository → gets back a list
 2. Gives you a citation
-- One tool, one result, done.
 
 * * *
 
@@ -140,8 +136,6 @@ Part 3 — Prototype + Publish:
 
 **Label:** Example
 **Title:** A few steps
-**Subtitle:** Agentic — multiple tools, one goal
-
 **Stage (step-grid, fragments):**
 - **Prompt:** "Find recent books on music theory we don't already own."
 1. Searches WorldCat → gets 25 results with ISBNs
@@ -156,8 +150,6 @@ Part 3 — Prototype + Publish:
 
 **Label:** Example
 **Title:** Try, fail, adjust
-**Subtitle:** Agentic — adapts when things go wrong
-
 **Stage (step-grid, fragments):**
 - **Prompt:** "Check if these 20 ILL-requested titles are available in our catalog."
 1. Writes a Python script to query the API
