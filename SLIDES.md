@@ -22,6 +22,9 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 **Stage (agenda table):**
 
+Part 0 — Review & Framing:
+- From Chatbots to Agents
+
 Part 1 — Setup:
 - Install Homebrew / Node.js
 - Install and launch Gemini CLI
@@ -57,14 +60,123 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 4 — Section Break
+## Slide 4 — Have You Used These?
+
+**Label:** Framing
+**Title:** Have you used these?
+**Subtitle:** ChatGPT, Claude, Copilot, Gemini
+
+**Stage (stageCenter):**
+- **Big:** You type something, it "types" back.
+- **Hint:** That's a chatbot — a text-in, text-out interface to a large language model.
+
+* * *
+
+## Slide 5 — What's Happening
+
+**Label:** Framing
+**Title:** What's happening
+
+**Stage (step-grid, fragments):**
+1. It's predicting the **next word** over and over, very fast
+2. Trained on a lot of text, learned patterns
+3. **Fluent** but not "grounded" — it can sound confident while being wrong
+
+* * *
+
+## Slide 6 — Tools & Groundedness
+
+**Label:** Framing
+**Title:** Tools & Groundedness
+**Subtitle:** How models connect to the real world
+
+**Stage (step-grid, fragments):**
+1. Sometimes it **searches the web**
+2. Sometimes it **reads a file** you uploaded
+3. Sometimes it **runs code**
+4. A *tool* is a function the model can call — "search this," "fetch that," "calculate this."
+
+* * *
+
+## Slide 7 — Agentic Means It Adapts
+
+**Label:** Framing
+**Title:** Agentic means it adapts
+
+**Stage (stageCompare):**
+- **Regular / One shot:** You ask → maybe one tool call → answer
+- **Agentic / It keeps going:** Look at the result → decide what to do next → call another tool → repeat until the task seems done
+
+* * *
+
+## Slide 8 — The Agentic Harness
+
+**Label:** Framing
+**Title:** The Agentic Harness
+**Subtitle:** The model doesn't run itself
+
+**Stage (step-grid, fragments):**
+1. Something has to orchestrate the loop: send a prompt → check if it wants a tool → run the tool → feed the result back → repeat
+2. Examples: **Claude Code**, **Cursor**, **Gemini CLI**
+3. That's what people mean when they say "agentic" — **a system that can pursue a goal, planning and recovering on its own**
+
+* * *
+
+## Slide 9 — Example: One Tool Call
+
+**Label:** Example
+**Title:** One tool call
+**Subtitle:** Not agentic — just helpful
+
+**Stage (step-grid, fragments):**
+- **Prompt:** "What's the most recent article in CUNY Academic Works about open access?"
+1. Searches the repository → gets back a list
+2. Gives you a citation
+- One tool, one result, done.
+
+* * *
+
+## Slide 10 — Example: A Few Steps
+
+**Label:** Example
+**Title:** A few steps
+**Subtitle:** Agentic — multiple tools, one goal
+
+**Stage (step-grid, fragments):**
+- **Prompt:** "Find recent books on music theory we don't already own."
+1. Searches WorldCat → gets 25 results with ISBNs
+2. Filters to books where held_by_institution: false
+3. Searches Primo by ISBN to double-check holdings
+4. Fetches publisher websites to verify ISBNs
+5. Returns a list ready for ordering
+
+* * *
+
+## Slide 11 — Example: Try, Fail, Adjust
+
+**Label:** Example
+**Title:** Try, fail, adjust
+**Subtitle:** Agentic — adapts when things go wrong
+
+**Stage (step-grid, fragments):**
+- **Prompt:** "Check if these 20 ILL-requested titles are available in our catalog."
+1. Writes a Python script to query the API
+2. Runs it → 401 error, API key missing
+3. Reads the error, adds authentication
+4. Runs again → some return empty (searching by title instead of ISBN)
+5. Adjusts the query to use ISBN
+6. Runs again → full results → writes a CSV
+
+* * *
+
+## Slide 12 — Section Break
 
 **Tag:** Part 1
 **Title:** Setup
 
 * * *
 
-## Slide 5 — Install Homebrew / Node.js
+## Slide 13 — Install Homebrew / Node.js
 
 **Label:** Setup
 **Title:** Install Homebrew / Node.js
@@ -83,7 +195,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 6 — Gemini CLI Setup
+## Slide 14 — Gemini CLI Setup
 
 **Label:** Setup
 **Title:** Install and Launch Gemini CLI
@@ -97,14 +209,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 7 — Section Break
+## Slide 15 — Section Break
 
 **Tag:** Part 2
 **Title:** Agentic Workflows
 
 * * *
 
-## Slide 8 — Directory Reorganization Demo
+## Slide 16 — Directory Reorganization Demo
 
 **Label:** Demo
 **Title:** Reorganize the Folder with Approval
@@ -121,7 +233,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 9 — Establish an Agent Workflow
+## Slide 17 — Establish an Agent Workflow
 
 **Label:** Demo
 **Title:** Establish an Agent Workflow
@@ -133,7 +245,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 10 — Agentic Documentation
+## Slide 18 — Agentic Documentation
 
 **Label:** Tool
 **Title:** Create `AGENTS.md`
@@ -146,7 +258,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 11 — Verify the Reorganized Project
+## Slide 19 — Verify the Reorganized Project
 
 **Label:** Demo
 **Title:** Verify the Reorganized Project
@@ -159,14 +271,14 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 12 — Section Break
+## Slide 20 — Section Break
 
 **Tag:** Part 3
 **Title:** Prototype + Publish
 
 * * *
 
-## Slide 13 — Open & Test the Project
+## Slide 21 — Open & Test the Project
 
 **Label:** Demo
 **Title:** Open & Test the Project
@@ -180,7 +292,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 14 — Customize the Focus Timer
+## Slide 22 — Customize the Focus Timer
 
 **Label:** Demo
 **Title:** Customize the Focus Timer
@@ -194,7 +306,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 15 — Authenticate with GitHub CLI
+## Slide 23 — Authenticate with GitHub CLI
 
 **Label:** Publish
 **Title:** Authenticate with GitHub CLI
@@ -208,7 +320,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 16 — Create Remote Repository
+## Slide 24 — Create Remote Repository
 
 **Label:** Publish
 **Title:** Create Remote Repository
@@ -220,7 +332,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 17 — Push to GitHub
+## Slide 25 — Push to GitHub
 
 **Label:** Publish
 **Title:** Push to GitHub
@@ -232,7 +344,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 18 — Enable GitHub Pages
+## Slide 26 — Enable GitHub Pages
 
 **Label:** Publish
 **Title:** Enable GitHub Pages
@@ -248,7 +360,7 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 19 — Resources
+## Slide 27 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -268,4 +380,4 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-_Last synced: 2026-03-09. Deck has 19 slides. Update both this file and `index.html` together._
+_Last synced: 2026-03-09. Deck has 27 slides. Update both this file and `index.html` together._
