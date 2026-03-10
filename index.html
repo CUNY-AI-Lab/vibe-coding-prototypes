@@ -127,7 +127,7 @@
     /* ── CONTENT PANEL ── */
     .content {
       flex: 0 0 auto;
-      display: flex; flex-direction: column; justify-content: center;
+      display: flex; flex-direction: column; justify-content: flex-start;
       padding: clamp(28px,4vw,48px) clamp(24px,3.5vw,44px);
       border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.05);
@@ -276,7 +276,7 @@
     /* step rows */
     .step-grid {
       position: relative; width: 100%;
-      display: flex; flex-direction: column; gap: 6px; justify-content: center;
+      display: flex; flex-direction: column; gap: 6px; justify-content: flex-start;
       padding: clamp(12px,2vw,24px);
     }
     .step-row {
@@ -291,7 +291,7 @@
     .agenda-table {
       position: relative; width: 100%;
       padding: clamp(14px,2.5vw,28px) clamp(16px,3vw,32px);
-      display: flex; flex-direction: column; justify-content: center;
+      display: flex; flex-direction: column; justify-content: flex-start;
     }
     .agenda-section { margin-bottom: clamp(6px,1.2vw,14px); }
     .agenda-section:last-child { margin-bottom: 0; }
