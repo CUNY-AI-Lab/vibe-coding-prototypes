@@ -157,6 +157,20 @@ document.addEventListener('touchend', e => {
   swipeOk = false;
 }, { passive: true });
 
+/* ── Trackpad / mouse-wheel swipe (macOS two-finger gesture) ── */
+let wheelLock = false;
+document.addEventListener('wheel', e => {
+  if (document.body.classList.contains('overview')) return;
+  if (e.target === scrubber || e.target.closest('.sticky-footer')) return;
+  if (wheelLock) return;
+  const absX = Math.abs(e.deltaX);
+  const absY = Math.abs(e.deltaY);
+  if (absX < 30 || absX < absY) return;
+  wheelLock = true;
+  e.deltaX > 0 ? advance() : retreat();
+  setTimeout(() => { wheelLock = false; }, 400);
+}, { passive: true });
+
 window.addEventListener('hashchange', () => {
   const m = location.hash.match(/^#(\d+)$/);
   if (m) show(parseInt(m[1], 10) - 1, true);
