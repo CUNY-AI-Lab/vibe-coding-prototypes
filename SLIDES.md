@@ -48,7 +48,7 @@ Part 3 — Prototype + Publish:
 
 ## Slide 3 — Foundations Review
 
-**Label:** Review
+**Label:** Refresher
 **Title:** Foundations Review
 **Link:** [Workshop #1 deck](https://cuny-ai-lab.github.io/gen-dev-foundations/#1)
 
