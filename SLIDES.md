@@ -212,7 +212,7 @@ Part 3 — Prototype + Publish:
 
 **Label:** Demo
 **Title:** Planning Stage
-**Download:** `src/project-prototype.zip`
+**Download:** `src/prototype.zip`
 
 **Stage (step-grid, fragments):**
 

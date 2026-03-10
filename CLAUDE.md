@@ -35,7 +35,7 @@ When adding, removing, or reordering slides:
 
 - On desktop (≥720px), `.agenda-table`, `.step-grid`, `.stageCenter`, `.stageCompare`, and `.res-wrap` become `position: absolute; inset: 0` with `overflow-y: auto`. Content that exceeds the viewport height scrolls inside the stage — new items added to the top may be clipped if the total height overflows.
 - The agenda slide (`data-slide="agenda"`) is the most size-sensitive. When adding sections, reduce `margin-bottom` on `.agenda-section` if needed to keep all parts visible without scrolling.
-- **`src/project-prototype.zip`** — Downloadable starter files (messy focus-timer project) used in the workshop demo. Referenced by the "Reorganize the Folder" slide.
+- **`src/prototype.zip`** — Downloadable starter files (messy focus-timer project) used in the workshop demo. Referenced by the "Reorganize the Folder" slide.
 
 ## Development
 
