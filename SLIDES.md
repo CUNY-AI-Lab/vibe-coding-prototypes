@@ -227,10 +227,12 @@ Part 3 — Prototype + Publish:
 
 **Stage (stageCenter, fragments):**
 - **Big:** Review and modify the plan where relevant, then instruct the agent to act on it.
-- Target structure:
+- One possible result:
   - `index.html`
   - `css/style.css`
-  - `js/main.js`
+  - `js/timer.js`
+  - `js/helpers.js`
+  - `js/app-init.js`
   - `assets/icon.svg`
   - `assets/config.json`
 
