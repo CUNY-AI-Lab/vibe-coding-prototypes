@@ -22,10 +22,12 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 **Stage (agenda table):**
 
-Part 0 — Review & Framing:
+Part 0 — Review + Framing (20m):
+
+- Foundations Review
 - From Chatbots to Agents
 
-Part 1 — Setup:
+Part 1 — Setup (10m):
 - Install Homebrew / Node.js
 - Install and launch Gemini CLI
 
@@ -44,10 +46,10 @@ Part 3 — Prototype + Publish:
 
 * * *
 
-## Slide 3 — Review: Last Session
+## Slide 3 — Foundations Review
 
 **Label:** Review
-**Title:** Last Session
+**Title:** Foundations Review
 **Link:** [Workshop #1 deck](https://cuny-ai-lab.github.io/gen-dev-foundations/#1)
 
 **Stage (step-grid, fragments):**

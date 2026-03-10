@@ -179,20 +179,20 @@
     }
     .title-qr img {
       width: clamp(72px,8vw,110px); height: clamp(72px,8vw,110px);
-      border-radius: 10px; border: 1px solid rgba(121,192,255,0.15);
-      background: rgba(121,192,255,0.04);
+      border-radius: 10px; border: 1px solid rgba(184,144,96,0.2);
+      background: rgba(184,144,96,0.04);
       transition: border-color 0.25s, box-shadow 0.25s;
     }
     .title-qr img:hover {
-      border-color: rgba(121,192,255,0.35);
-      box-shadow: 0 0 20px rgba(121,192,255,0.1);
+      border-color: rgba(184,144,96,0.4);
+      box-shadow: 0 0 20px rgba(184,144,96,0.12);
     }
     .title-qr .qr-caption {
-      font-size: clamp(12px,1.2vw,14px); color: var(--muted);
-      opacity: 0.72; line-height: 1.5;
+      font-size: clamp(12px,1.2vw,14px); color: #d4aa70;
+      opacity: 0.82; line-height: 1.5;
     }
     .title-qr .qr-caption strong {
-      color: var(--accent); font-weight: 600; opacity: 1;
+      color: #e0be8a; font-weight: 600; opacity: 1;
     }
     [data-slide="title"] .stage {
       flex: 1 1 auto;
@@ -535,7 +535,7 @@
       </div>
       <div class="title-qr">
         <a href="https://cuny-ai-lab.github.io/vibe-coding-prototypes/" target="_blank" rel="noopener"><img src="img/qr-code.svg" alt="QR code to follow along"></a>
-        <span class="qr-caption"><strong>Scan to follow along</strong><br>cuny-ai-lab.github.io/vibe-coding-prototypes</span>
+        <span class="qr-caption"><span style="color:var(--fg);font-weight:normal">Scan to follow along</span><br><a href="https://cuny-ai-lab.github.io/vibe-coding-prototypes/" target="_blank" rel="noopener" style="color:var(--accent)">cuny-ai-lab.github.io/vibe-coding-prototypes</a></span>
       </div>
       <div class="title-credit">
         <a href="https://ailab.gc.cuny.edu/" target="_blank" rel="noopener"><img src="img/cail-logo.png" alt="CUNY AI Lab"></a>
@@ -560,16 +560,17 @@
 
         <div class="agenda-section">
           <div class="agenda-section-head">
-            <span class="agenda-section-title"><a href="#3" style="text-decoration:none;color:inherit;">Part 0 &mdash; Review &amp; Framing</a></span>
-            <span class="agenda-section-time">15m</span>
+            <span class="agenda-section-title">Part 0 &mdash; Review + Framing</span>
+            <span class="agenda-section-time">20m</span>
           </div>
+          <a class="agenda-item" href="#3"><span class="agenda-item-label">Foundations Review</span></a>
           <a class="agenda-item" href="#4"><span class="agenda-item-label">From Chatbots to Agents</span></a>
         </div>
 
         <div class="agenda-section">
           <div class="agenda-section-head">
             <span class="agenda-section-title">Part 1 &mdash; Setup</span>
-            <span class="agenda-section-time">15m</span>
+            <span class="agenda-section-time">10m</span>
           </div>
           <a class="agenda-item" href="#13"><span class="agenda-item-label">Install Homebrew / Node.js</span></a>
           <a class="agenda-item" href="#14"><span class="agenda-item-label">Install and Launch Gemini CLI</span></a>
@@ -606,7 +607,7 @@
   <section class="slide" data-slide="review" aria-label="Review from Last Session">
     <div class="content">
       <div class="label">Review</div>
-      <h1>Last Session</h1>
+      <h1>Foundations Review</h1>
       <h2><a href="https://cuny-ai-lab.github.io/gen-dev-foundations/#1" target="_blank" rel="noopener">Workshop #1 deck</a></h2>
     </div>
     <div class="stage" aria-hidden="true">
