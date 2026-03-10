@@ -116,7 +116,7 @@ Part 3 — Prototype + Publish:
 **Subtitle:** The model doesn't run itself
 
 **Stage (step-grid, fragments):**
-1. Something has to orchestrate the loop: send a prompt → check if it wants a tool → run the tool → feed the result back → repeat
+1. Something has to run the loop: send a prompt → check if it wants a tool → run the tool → feed the result back → repeat
 2. Examples: **Claude Code**, **Cursor**, **Gemini CLI**
 3. That's what people mean when they say "agentic" — **a system that can pursue a goal, planning and recovering on its own**
 
