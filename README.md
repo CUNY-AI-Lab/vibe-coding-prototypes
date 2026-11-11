@@ -1,5 +1,7 @@
 # Vibe-Coding Prototypes — CAIL Spotlight Workshop #2
 
+> **Archival note.** This repository preserves the workshop as delivered in Spring 2026 as the second session of the CAIL Spotlight vibe coding workshops. A revised version, [*Vibe Coding II: Building a Prototype*](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/), forms part of the CUNY AI Lab's Fall 2026 Vibe Coding Series. Readers seeking current materials should consult that version; the tools, models, and procedures described here may no longer reflect the Lab's practice.
+
 Live: <https://cuny-ai-lab.github.io/vibe-coding-prototypes/>
 
 ## License
